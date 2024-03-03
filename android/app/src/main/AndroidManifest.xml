@@ -41,5 +41,8 @@
             <data android:mimeType="text/plain"/>
         </intent>
     </queries>
+<<<<<<< HEAD
 
+=======
+>>>>>>> b8b3814 (flutter project)
 </manifest>
