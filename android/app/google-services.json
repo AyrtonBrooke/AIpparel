@@ -12,7 +12,20 @@
           "package_name": "com.example.aiapparel"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "545736445073-23bt1fkc9dj81jsm4k6jkgf6be23p6rs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aiapparel",
+            "certificate_hash": "7a66e8be5900102b0aff5a45b22fd47e99fb2870"
+          }
+        },
+        {
+          "client_id": "545736445073-0utbgpbr0i03a1b8jn2e1ni23hak2gbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBwu9MCJRAAKU4SQk7xPb0Jn-wOQHmX8VM"
@@ -20,26 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:545736445073:android:be49a1050a3043bd390330",
-        "android_client_info": {
-          "package_name": "com.fyp.AIparrel"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBwu9MCJRAAKU4SQk7xPb0Jn-wOQHmX8VM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545736445073-0utbgpbr0i03a1b8jn2e1ni23hak2gbp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "545736445073-94stcreb2qvst7soidckp0auv3no4hgg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.aiapparel"
+              }
+            }
+          ]
         }
       }
     }

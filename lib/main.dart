@@ -1,47 +1,37 @@
-import 'package:aiapparel/pages/outfits.dart';
-import 'package:aiapparel/pages/settings.dart';
-import 'package:aiapparel/pages/wardrobe.dart';
-import 'package:aiapparel/widgets/ThemeDemo/AppTheme.dart';
-import 'package:aiapparel/auth/login.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:aiapparel/firebase_options.dart';
 import 'package:flutter/material.dart';
-import 'home/home.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
+import 'app.dart';
+import 'data/repositories/authentication/authentication_repository.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform);
+Future<void> main() async {
+  final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(const MyApp());
+  await GetStorage.init();
+
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
+  await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform).then(
+          (FirebaseApp value) => Get.put(AuthenticationRepository()),
+  );
+
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+//class MyHomePage extends StatefulWidget {
+  //const MyHomePage({super.key, required this.title});
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      home: const Login(),
-      debugShowCheckedModeBanner: false,
-    );
+  //final String title;
 
-  }
-}
+  //@override
+  //State<MyHomePage> createState() => _MyHomePageState();
+//}
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _currentIndex = 0;
+//class _MyHomePageState extends State<MyHomePage> {
+/*  int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,8 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.lightBlueAccent,
-        selectedItemColor: Colors.greenAccent,
+        backgroundColor: Colors.blue[200],
+        selectedItemColor: Colors.yellow,
         unselectedItemColor: Colors.black45,
         onTap: (int index) => setState(() => _currentIndex = index),
         items: [
@@ -103,4 +93,4 @@ class TabNavigationItem {
       title: "Settings",
     ),
   ];
-}
+}*/

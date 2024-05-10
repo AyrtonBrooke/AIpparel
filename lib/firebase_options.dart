@@ -70,6 +70,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '545736445073',
     projectId: 'aiparrel-84c69',
     storageBucket: 'aiparrel-84c69.appspot.com',
+    androidClientId: '545736445073-23bt1fkc9dj81jsm4k6jkgf6be23p6rs.apps.googleusercontent.com',
+    iosClientId: '545736445073-94stcreb2qvst7soidckp0auv3no4hgg.apps.googleusercontent.com',
     iosBundleId: 'com.example.aiapparel',
   );
 }
