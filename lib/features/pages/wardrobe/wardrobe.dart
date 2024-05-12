@@ -56,7 +56,6 @@ class WardrobePage extends StatelessWidget {
                             child: Image.network(
                               item.image,
                               height: 200,
-                              // Moved height inside the function
                               fit: BoxFit.cover,
                               errorBuilder: (context, error, stackTrace) =>
                                   const Icon(Icons.broken_image, size: 50),

@@ -13,13 +13,12 @@ class ATexts {
 
   // -- OnBoarding Texts
   static const String onBoardingTitle1 = "Create your digital wardrobe";
-  static const String onBoardingTitle2 = "Curate Outfits";
-  static const String onBoardingTitle3 = "View desirable clothes";
+  static const String onBoardingTitle2 = "View desirable clothes";
+  static const String onBoardingTitle3 = "Wishlist items for later";
 
   static const String onBoardingSubTitle1 = "Welcome to your digital wardrobe";
-  static const String onBoardingSubTitle2 = "Save your desired items";
-  static const String onBoardingSubTitle3 = "Get inspired from outfits";
-
+  static const String onBoardingSubTitle2 = "Get inspired from online items";
+  static const String onBoardingSubTitle3 = "Favourite your desired items";
 
   // -- Authentication Forms
   static const String firstName = "First Name";

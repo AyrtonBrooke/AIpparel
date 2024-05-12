@@ -38,7 +38,7 @@ class FavouritePage extends StatelessWidget {
                 builder: (context, snapshot) {
                   final emptyWidget = AAnimationLoaderWidget(
                     text: 'Whoops! Favourites Empty',
-                    animation: AImages.success,
+                    animation: AImages.empty,
                     showAction: true,
                     actionText: 'Let\'s add some',
                     onActionPressed: () =>

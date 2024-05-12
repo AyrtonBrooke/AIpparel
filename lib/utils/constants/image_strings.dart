@@ -14,11 +14,13 @@ class AImages {
   static const String verifyEmail = "assets/images/animations/email_verification.json";
   static const String success = "assets/images/animations/success.json";
   static const String docerAnimation = "assets/images/animations/docer.json";
+  static const String empty = "assets/images/animations/empty.json";
+
 
   // -- OnBoarding Texts
-  static const String onBoardingImage1 = "assets/images/on_boarding_images/sammy-line-searching.gif";
-  static const String onBoardingImage2 = "assets/images/on_boarding_images/outfitCreation.json";
-  static const String onBoardingImage3 = "assets/images/on_boarding_images/outfitsHome.json";
+  static const String onBoardingImage1 = "assets/images/on_boarding_images/outfitCreation.json";
+  static const String onBoardingImage2 = "assets/images/on_boarding_images/outfitsHome.json";
+  static const String onBoardingImage3 = "assets/images/on_boarding_images/wishlist.json";
 
   static const String productImage1 = "assets/images/items/nike-shoes.png";
   static const String productImage2 = "assets/images/items/product-1.png";

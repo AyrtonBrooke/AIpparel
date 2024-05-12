@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
+import 'package:lottie/lottie.dart';
 
 
 class onBoardingPage extends StatelessWidget {
   const onBoardingPage({
-    super.key, required this.image, required this.title, required this.subTitle,
+    super.key, required this.animationAsset, required this.title, required this.subTitle,
   });
 
-  final String image, title, subTitle;
+  final String animationAsset, title, subTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +18,11 @@ class onBoardingPage extends StatelessWidget {
       padding: const EdgeInsets.all(ASizes.defaultSpace),
       child: Column(
         children: [
-          Image(
+          Lottie.asset(
+            animationAsset,
             width: AHelperFunctions.screenWidth() * 0.8,
             height: AHelperFunctions.screenHeight() * 0.6,
-            image: AssetImage(image),
+            fit: BoxFit.fill,  // Optional, depending on your design needs
           ),
           Text(title,
             style: Theme.of(context).textTheme.headlineMedium,

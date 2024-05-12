@@ -2,7 +2,6 @@ import 'package:aiapparel/common/widgets/custom_shapes/containers/primary_header
 import 'package:aiapparel/common/widgets/heading/section_heading.dart';
 import 'package:aiapparel/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:aiapparel/features/pages/settings/profile.dart';
-import 'package:aiapparel/features/pages/settings/upload/upload.dart';
 import 'package:aiapparel/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -59,12 +58,6 @@ class SettingsPage extends StatelessWidget {
                   const ASectionHeading(
                       title: 'App Settings', showActionButton: false),
                   const SizedBox(height: ASizes.spaceBtwItems),
-                  ASettingsMenuTile(
-                      icon: Iconsax.document_upload,
-                      title: 'Uploads',
-                      subTitle: 'Upload Data',
-                    onTap: () => Get.to(() => const UploadPage()), // Navigate to UploadPage
-                  ),
                   SizedBox(
                     width: double.infinity,
                     child:

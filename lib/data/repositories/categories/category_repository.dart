@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../utils/exceptions/firebase_exceptions.dart';
 import '../../../utils/exceptions/platform_exceptions.dart';
-import '../../services/firebase_storage_service.dart';
 
 class CategoryRepository extends GetxController {
   static CategoryRepository get instance => Get.find();
@@ -30,28 +29,6 @@ class CategoryRepository extends GetxController {
       final snapshot = await _db.collection('Categories').where('ParentId', isEqualTo: categoryId).get();
       final result = snapshot.docs.map((e) => CategoryModel.fromSnapshot(e)).toList();
       return result;
-    } on FirebaseException catch (e) {
-      throw AFirebaseException(e.code).message;
-    } on PlatformException catch (e) {
-      throw APlatformException(e.code).message;
-    } catch (e) {
-      throw 'Something went wrong. Please try again';
-    }
-  }
-
-  Future<void> uploadData(List<CategoryModel> categories) async {
-    try {
-      final storage = Get.put(AFirebaseStorageService());
-
-      for (var category in categories) {
-        final file = await storage.getImageDataFromAssets(category.image);
-
-        final url = await storage.uploadImageData('Categories', file, category.name);
-
-        category.image = url;
-
-        await _db.collection('Categories').doc(category.id).set(category.toJson());
-      }
     } on FirebaseException catch (e) {
       throw AFirebaseException(e.code).message;
     } on PlatformException catch (e) {
