@@ -1,16 +1,22 @@
-# aiapparel
+# AIApparel
+Welcome to AIApparel, a Flutter-based mobile application designed to inspire users and help them declutter their wardrobe. By leveraging the power of AI and modern app development frameworks, AIApparel offers personalized clothing suggestions, smart wardrobe management, and more.
 
-A new Flutter project.
+# Features
+Inspiration for Outfits: Get daily outfit suggestions tailored to your style preferences and weather conditions.
 
-## Getting Started
+Wardrobe Management: Easily organize, categorize, and declutter your wardrobe.
 
-This project is a starting point for a Flutter application.
+AI-Powered Recommendations: Utilize Google ML Kit to scan clothing items and receive style tips and suggestions.
 
-A few resources to get you started if this is your first Flutter project:
+Firebase Integration: Seamlessly sync your data across devices and access it anytime.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Real-time Notifications: Stay updated with fashion trends and receive alerts for special outfit suggestions.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Tech Stack
+Flutter: A UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.
+
+GetX: A powerful, high-performance framework for managing state, navigation, and dependencies in Flutter applications.
+
+Firebase: A comprehensive app development platform that provides tools for app backend, storage, authentication, and real-time databases.
+
+Google ML Kit: A machine learning SDK that enables developers to incorporate smart features like image labeling and text recognition.
