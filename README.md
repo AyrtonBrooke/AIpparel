@@ -1,16 +1,14 @@
 # AIApparel
-Welcome to AIApparel, a Flutter-based mobile application designed to inspire users and help them declutter their wardrobe. By leveraging the power of AI and modern app development frameworks, AIApparel offers personalized clothing suggestions, smart wardrobe management, and more.
+Welcome to AIApparel, a Flutter-based mobile application designed to inspire users and help them declutter their wardrobe. By leveraging the power of AI and modern app development frameworks, smart wardrobe management, and inspiring new styles of clothing.
 
 # Features
-Inspiration for Outfits: Get daily outfit suggestions tailored to your style preferences and weather conditions.
+Inspiration for Outfits: Get daily outfit suggestions tailored to your style preferences.
 
 Wardrobe Management: Easily organize, categorize, and declutter your wardrobe.
 
-AI-Powered Recommendations: Utilize Google ML Kit to scan clothing items and receive style tips and suggestions.
+AI-Powered Recommendations: Utilize Google ML Kit to image label, text extract items of clothing.
 
 Firebase Integration: Seamlessly sync your data across devices and access it anytime.
-
-Real-time Notifications: Stay updated with fashion trends and receive alerts for special outfit suggestions.
 
 # Tech Stack
 Flutter: A UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.
