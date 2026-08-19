@@ -12,7 +12,6 @@
           "package_name": "com.example.aiapparel"
         }
       },
-<<<<<<< HEAD
       "oauth_client": [
         {
           "client_id": "545736445073-23bt1fkc9dj81jsm4k6jkgf6be23p6rs.apps.googleusercontent.com",
@@ -27,9 +26,6 @@
           "client_type": 3
         }
       ],
-=======
-      "oauth_client": [],
->>>>>>> b8b3814 (flutter project)
       "api_key": [
         {
           "current_key": "AIzaSyBwu9MCJRAAKU4SQk7xPb0Jn-wOQHmX8VM"
@@ -37,7 +33,6 @@
       ],
       "services": {
         "appinvite_service": {
-<<<<<<< HEAD
           "other_platform_oauth_client": [
             {
               "client_id": "545736445073-0utbgpbr0i03a1b8jn2e1ni23hak2gbp.apps.googleusercontent.com",
@@ -51,28 +46,6 @@
               }
             }
           ]
-=======
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:545736445073:android:be49a1050a3043bd390330",
-        "android_client_info": {
-          "package_name": "com.fyp.AIparrel"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBwu9MCJRAAKU4SQk7xPb0Jn-wOQHmX8VM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
->>>>>>> b8b3814 (flutter project)
         }
       }
     }

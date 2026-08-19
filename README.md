@@ -18,3 +18,30 @@ GetX: A powerful, high-performance framework for managing state, navigation, and
 Firebase: A comprehensive app development platform that provides tools for app backend, storage, authentication, and real-time databases.
 
 Google ML Kit: A machine learning SDK that enables developers to incorporate smart features like image labeling and text recognition.
+
+# Setup
+
+# Flutter SDK
+git clone https://github.com/flutter/flutter.git -b stable
+
+echo 'export PATH="$HOME/flutter/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+flutter doctor
+
+# Download and install Google Chrome for Linux
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt update && sudo apt install -y ./google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+
+# Enable web support in Flutter
+flutter config --enable-web
+
+# Remove old locks if corrupted
+rm -f pubspec.lock
+
+flutter clean
+flutter pub get
+
+# run
+flutter run -d chrome
